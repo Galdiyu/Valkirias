@@ -1,4 +1,4 @@
-@import "_calendario";
+@import "_colores";
 
 .grid-container{
     font-family: 'Georama', sans-serif;
@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #002f6c;
+    background-color:$azul-secundario;
     font-family: 'Georama'!important; 
     margin: 0;
 }
@@ -170,7 +170,7 @@ body {
 .sidebar{
     grid-area: sidebar;
     color: #73a3e2;
-    background-color: #002f6c;
+    background-color: $azul-secundario;
     text-align: center;
     padding-right: 10px;
     padding-top: 2rem;
@@ -315,10 +315,14 @@ table {
     align-items: center;
 }
 
-
+.tabla-calendario{
+    padding-left: 40px;
+    text-align: center;
+    background-color:$color-fondo;
+}
 
 #mapa-BJ {
-    background-color: #002f6c;
+    background-color: $azul-secundario;
 }
 
 @media screen and (max-width: 768px) {
@@ -370,7 +374,7 @@ table {
   background-color: #fbfbfb;
   padding-left: 30px;
 }
- 
+
 input {
   background-color: #fbfbfb;
   width: 408px;
@@ -392,7 +396,16 @@ textarea {
   margin-bottom: 20px;
   padding-top: 15px;
 }
- 
+
+/* Media Query para formulario */
+@media screen and (max-width: 600px) {
+    input {
+        width: 200px;
+    }
+    textarea {
+        width: 200px;}
+}
+
 label {
   display: block;
   float: center;
@@ -404,7 +417,7 @@ button {
   padding-right: 5px;
   margin-bottom: 20px;
   margin-top: 10px;
-  background-color: #002f6c;
+  background-color: $azul-secundario;
   border-style: none;
   border-radius: 10px;
   cursor: pointer;
