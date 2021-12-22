@@ -1,14 +1,12 @@
 @charset "UTF-8";
-.tabla-calendario {
-  padding-left: 40px;
-  text-align: center;
-  background-color: #039ddc; }
-
 .grid-container {
   font-family: 'Georama', sans-serif;
   background-color: coral;
   display: grid;
-  grid-template-areas: 'header header header header header' 'main main main main sidebar' 'main main main main sidebar' 'footer footer footer footer footer'; }
+  grid-template-areas: 'header header header header header'
+ 'main main main main sidebar'
+ 'main main main main sidebar'
+ 'footer footer footer footer footer'; }
 
 .grid-container header {
   padding: 0; }
@@ -29,7 +27,10 @@ body {
     font-family: 'Georama', sans-serif;
     background-color: coral;
     display: grid;
-    grid-template-areas: 'header header header header header' 'main main main main main' 'sidebar sidebar sidebar sidebar sidebar' 'footer footer footer footer footer'; } }
+    grid-template-areas: 'header header header header header'
+ 'main main main main main'
+ 'sidebar sidebar sidebar sidebar sidebar'
+ 'footer footer footer footer footer'; } }
 
 .color-nav {
   background-color: #000063; }
@@ -261,6 +262,11 @@ table {
   justify-content: center;
   align-items: center; }
 
+.tabla-calendario {
+  padding-left: 40px;
+  text-align: center;
+  background-color: #039ddc; }
+
 #mapa-BJ {
   background-color: #002f6c; }
 
@@ -324,6 +330,13 @@ textarea {
   padding-left: 10px;
   margin-bottom: 20px;
   padding-top: 15px; }
+
+/* Media Query para formulario */
+@media screen and (max-width: 600px) {
+  input {
+    width: 200px; }
+  textarea {
+    width: 200px; } }
 
 label {
   display: block;
